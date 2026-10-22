@@ -1,0 +1,54 @@
+:root {
+    --crema:#f7e8d8;
+    --cafe:#4c2f24;
+    --blanco:#f0eae9;
+}
+
+main{
+padding: 20px;
+}
+body{
+    background-color: var(--crema);
+}
+.carta_ProductoCard{
+    margin-top: 20px;
+}
+
+
+
+.article_ProductoCard{
+    display: flex;
+    gap: 20px;
+    background-color: var(--blanco);
+    border: solid 1px  maroon;
+    border-radius: 40px;
+    align-items: center;
+    padding: 25px;
+
+}
+
+.img_ProductoCard{
+width: 150px;
+height: 150px;
+border-radius: 10px;
+object-fit: cover;
+}
+
+.h3_ProductoCard{
+    font-size: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:var(--cafe) ;
+    font-weight: 700;
+}
+
+.p_descripcion_ProductoCard{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+
+.p_precio_ProductoCard{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--cafe);
+    font-weight: 600;
+}
