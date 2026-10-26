@@ -1,9 +1,17 @@
 * {
   box-sizing: border-box;
 }
-
+:root {
+    --crema:#f7e8d8;
+    --cafe:#4c2f24;
+    --blanco:#f0eae9;
+}
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  background-color: var(--crema);
+}
+main{
+padding: 20px;
 }

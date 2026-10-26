@@ -1,15 +1,6 @@
-:root {
-    --crema:#f7e8d8;
-    --cafe:#4c2f24;
-    --blanco:#f0eae9;
-}
 
-main{
-padding: 20px;
-}
-body{
-    background-color: var(--crema);
-}
+
+
 .carta_ProductoCard{
     margin-top: 20px;
 }
