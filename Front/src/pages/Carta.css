@@ -1,0 +1,58 @@
+.botonera_carta {
+    display: flex;
+    gap: 30px;
+    flex-wrap: 30px;
+    margin-left: 5px;
+}
+
+.boton_Cafés {
+    width: 100px;
+    height: 40px;
+    border-radius: 40px;
+    border-color: var(--cafe_oscuro);
+    background-color: white;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    color: var(--cafe);
+}
+
+.boton_Dulces {
+    width: 100px;
+    height: 40px;
+    border-radius: 40px;
+    border-color: var(--cafe_oscuro);
+    background-color: white;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    color: var(--cafe);
+}
+
+.boton_Bebidas {
+    width: 100px;
+    height: 40px;
+    border-radius: 40px;
+    border-color: var(--cafe_oscuro);
+    background-color: white;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    color: var(--cafe);
+}
+
+.boton_Salados {
+    width: 100px;
+    height: 40px;
+    border-radius: 40px;
+    border-color: var(--cafe_oscuro);
+    background-color: white;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    color: var(--cafe);
+}
