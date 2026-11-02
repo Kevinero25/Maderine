@@ -5,7 +5,7 @@ function Hero() {
         <div className="container_Hero">
 
             <div className="container_img">
-                <img className="img_Hero" src="/Imagenes/Matcha.webp" alt="Matcha" />
+                <img className="img_Hero" src="/Imagenes/matcha.jpeg" alt="Matcha" />
             </div>
 
             <div className="container_titulo">
