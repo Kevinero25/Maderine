@@ -8,8 +8,11 @@ function ProductoCard({ nombre, precio, agotado, descripcion, imagen, onAgregar 
                 <div className="container_ProductoCard">
                     <h3 className="h3_ProductoCard">{nombre}</h3>
                     <p className="p_descripcion_ProductoCard">{descripcion}</p>
-                    <button onClick={onAgregar} className="boton_ProductoCard">+</button>
-                    <p className="p_precio_ProductoCard">${precio}</p>
+                    <div className="container_agregar">
+                        <p className="p_precio_ProductoCard">${precio}</p>
+                        <button onClick={onAgregar} className="boton_ProductoCard">+</button>
+
+                    </div>
                     {agotado && <span>Agotado</span>}
                 </div>
             </article>

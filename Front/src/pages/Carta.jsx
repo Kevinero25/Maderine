@@ -9,8 +9,6 @@ import "./Carta.css"
 function Carta() {
     const [categoria, setCategoria] = useState("Cafés");
     const [carrito, setCarrito] = useState([])
-    console.log(carrito)
-
 
     function agregar(producto) {
         setCarrito([...carrito,producto])
