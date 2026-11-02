@@ -8,6 +8,13 @@ import "./Carta.css"
 
 function Carta() {
     const [categoria, setCategoria] = useState("Cafés");
+    const [carrito, setCarrito] = useState([])
+
+
+    function agregar(producto) {
+        
+    }
+
     const filtrados = productos.filter((producto) => producto.categoria === categoria);
 
     return (
