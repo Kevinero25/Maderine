@@ -9,11 +9,13 @@ import "./Carta.css"
 function Carta() {
     const [categoria, setCategoria] = useState("Cafés");
     const [carrito, setCarrito] = useState([])
+    console.log(carrito)
 
 
     function agregar(producto) {
-        
+        setCarrito([...carrito,producto])
     }
+    
 
     const filtrados = productos.filter((producto) => producto.categoria === categoria);
 
@@ -31,7 +33,7 @@ function Carta() {
             </div>
 
             {filtrados.map((producto) => (
-                <ProductoCard key={producto.id} {...producto} />
+                <ProductoCard key={producto.id} {...producto} onAgregar={()=>agregar(producto)} />
             ))}
 
 
