@@ -1,0 +1,22 @@
+.aviso_abierta,
+.aviso_llena {
+    padding: 12px 20px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-block: 20px;
+}
+
+.aviso_abierta {
+    background-color: #dcebd2;
+    color: #2f5d2a;
+    border: 2px solid #2f5d2a;
+}
+
+.aviso_llena {
+    background-color: #f6d9d2;
+    color: #8a2e1c;
+    border: 2px solid #8a2e1c;
+}

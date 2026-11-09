@@ -4,6 +4,8 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import { useState } from "react";
 import "./Carta.css"
+import AvisoTope from "../components/AvisoTope"
+import Horario from "../components/Horario";
 
 
 function Carta() {
@@ -22,7 +24,7 @@ function Carta() {
 
             <Header />
             <Hero />
-
+            <AvisoTope/>
             <div className="botonera_carta">
                 <button className="boton_Cafés" onClick={() => setCategoria("Cafés")}>Cafés</button>
                 <button className="boton_Dulces" onClick={() => setCategoria("Dulces")}>Dulces</button>
@@ -34,7 +36,7 @@ function Carta() {
                 <ProductoCard key={producto.id} {...producto} onAgregar={()=>agregar(producto)} />
             ))}
 
-
+            <Horario/>
 
         </main>
     )
