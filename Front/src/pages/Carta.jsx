@@ -11,11 +11,12 @@ import Horario from "../components/Horario";
 function Carta() {
     const [categoria, setCategoria] = useState("Cafés");
     const [carrito, setCarrito] = useState([])
+    const [aviso, setAviso] = useState(false)
 
     function agregar(producto) {
-        setCarrito([...carrito,producto])
+        setCarrito([...carrito, producto])
     }
-    
+
 
     const filtrados = productos.filter((producto) => producto.categoria === categoria);
 
@@ -24,7 +25,8 @@ function Carta() {
 
             <Header />
             <Hero />
-            <AvisoTope/>
+            <AvisoTope llena={aviso} />
+            <button onClick={()=> setAviso(!aviso)}>Cambiar</button>
             <div className="botonera_carta">
                 <button className="boton_Cafés" onClick={() => setCategoria("Cafés")}>Cafés</button>
                 <button className="boton_Dulces" onClick={() => setCategoria("Dulces")}>Dulces</button>
@@ -33,10 +35,10 @@ function Carta() {
             </div>
 
             {filtrados.map((producto) => (
-                <ProductoCard key={producto.id} {...producto} onAgregar={()=>agregar(producto)} />
+                <ProductoCard key={producto.id} {...producto} onAgregar={() => agregar(producto)} />
             ))}
 
-            <Horario/>
+            <Horario />
 
         </main>
     )
