@@ -23,7 +23,7 @@ function Carta() {
     return (
         <main>
 
-            <Header />
+            <Header cantidad={carrito.length}/>
             <Hero />
             <AvisoTope llena={aviso} />
             <button onClick={()=> setAviso(!aviso)}>Cambiar</button>

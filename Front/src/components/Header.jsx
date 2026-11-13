@@ -1,6 +1,6 @@
 import "./Header.css"
 
-function Header(){
+function Header({cantidad}){
     return(
         <header className="header_Header">
             <div className="container_Header">
@@ -8,7 +8,7 @@ function Header(){
                 <span className="subtitulo_Header">CAFETERÍA . LOS BANCOS</span>
             </div>
 
-            <button className="carrito_Header">🛒</button>
+            <button className="carrito_Header">🛒{cantidad}</button>
         </header>
     )
 }
