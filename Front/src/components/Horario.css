@@ -1,0 +1,25 @@
+.hora,
+.hora_activa {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 2px solid var(--cafe);
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    margin: 4px;
+}
+
+.hora {
+    background-color: var(--blanco);
+    color: var(--cafe);
+}
+
+.hora:hover {
+    background-color: var(--crema);
+}
+
+.hora_activa {
+    background-color: var(--cafe);
+    color: var(--crema);
+}
