@@ -8,9 +8,8 @@ import AvisoTope from "../components/AvisoTope"
 import Horario from "../components/Horario";
 
 
-function Carta() {
+function Carta({carrito,setCarrito}) {
     const [categoria, setCategoria] = useState("Cafés");
-    const [carrito, setCarrito] = useState([])
     const [aviso, setAviso] = useState(false)
 
     function agregar(producto) {
