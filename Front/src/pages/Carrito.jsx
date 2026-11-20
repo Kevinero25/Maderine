@@ -1,9 +1,14 @@
 
 
-function Carrito (){
+
+function Carrito ({carrito}){
     return(
-        <h1>Mi pedido</h1>
-        
+        <div>
+            <h1>Mi pedido</h1>
+            {carrito.map((producto)=>(
+                <p key={producto.id}>{producto.nombre}- ${producto.precio}</p>
+            ))}
+        </div>
     )
 }
 
